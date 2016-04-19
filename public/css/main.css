@@ -1,0 +1,108 @@
+/*blue #4A90E2*/
+/*green  #68B118*/
+/*red    #C60018*/
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: #fff;
+}
+.full-table{
+  position: relative;
+  width: 100%;
+  border: 2px solid #ccc;
+  margin: 10px;
+  height:100%;
+  max-height: 400px;
+}
+.left-side{
+  height: 100%;
+  position: absolute;
+  top:0%;
+  bottom:0%;
+  left:0%;
+  width: 280px;
+  border-right: 3px solid #ccc;
+}
+.left-side .match{
+  height: 700px;
+  overflow: auto;
+}
+.left-side h2{
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 15px;
+  text-decoration: underline;
+  border-bottom: 2px solid #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.left-side h3{
+  cursor: pointer;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  padding-left: 20px;
+  padding-top: 15px;
+  height:50px;
+  /*background-color: #000;*/
+  font-size: 13px;
+}
+.left-side h3:nth-child(3){
+  background-color: #979797;
+  border-right: 10px solid #68B118;
+  color:#fff;
+  font-size: 17px;
+}
+.table .line{
+  margin: 5px;
+}
+.left-side h3:hover{
+  /*background-color: #e5e5e5;*/
+  /*color:#fff;*/
+  text-shadow: 0 0 5px #ccc;
+  border-right: 10px solid #4A90E2;
+}
+.right-side{
+  height: 100%;
+  position: relative;
+  left:280px;
+  top:0%;
+  bottom:0%;
+  right:0%;
+  width: 50%;
+}
+.table{
+  position: absolute;
+  margin-top: 35px;
+  width: 400px;
+  min-width: 400px;
+}
+.table ul li{
+  display: inline-block;
+  width: 100px;
+  border:1px solid #000;
+  /*margin:0;*/
+  text-align: center;
+  font-size: 12px;
+}
+.table ul  {
+  margin: 0;
+  width: 400px;
+}
+
+.table ul .website-title{
+  margin-left: 10px;
+}
+.table ul .website-title,
+.table ul .asso-title,
+.table ul .xi-title,
+.table ul .diplo-title{
+  margin-left: -4px;
+  font-size: 14px;
+  background-color: #F5A623; /*orange*/
+  color:#fff;
+}
